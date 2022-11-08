@@ -1,0 +1,343 @@
+@import "reset";
+#header{
+  background: rgba(38, 39, 43, 0.33);
+  .header{
+    color: $color;
+    padding: 20px;
+    @include between;
+    &-_a{
+    width: 30%;
+    a{
+      color: $color ;
+      padding: 0 20px;
+    }
+  }
+    &-_input{
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 40px;
+      padding: 1% 10%  1% 1%;
+   }
+    &-_icon{
+      padding-left: 25px;
+    }
+  }
+}
+#section{
+  .section{
+    padding: 5% 15%;
+    text-align: center;
+    h1{
+     @include h1;
+      font-size: 92px;
+      line-height: 120px;
+    }
+    p{
+      @include p;
+    }
+  }
+}
+#monkey{
+  .monkey{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+    &__img{
+      @include between;
+    }
+    &--icon{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      &__icons{
+        border-radius: 50%;
+        background: #FE7E3F;
+        font-size: 50px;
+        color: #FFFFFF;
+        padding: 20px;
+      }
+      p{
+        text-align: right;
+      }
+    }
+    &-_img{
+      position: absolute;
+      margin: -50px -130px;
+    }
+    p{
+      @include h1;
+      font-size: 15px;
+      width: 200px;
+    }
+  }
+}
+#logo{
+  .logo{
+    @include between;
+    display: flex;
+    justify-content: space-around;
+    line-height: 130px;
+    h1{
+      @include h1;
+    }
+  }
+}
+#swiper{
+  .swiper{
+    padding: 50px 0;
+    &-_logo{
+      @include center;
+     h1{
+       @include h1;
+     }
+      p{
+        @include p;
+      }
+    }
+    &-_text{
+      position: relative;
+      margin-top: -50%;
+      padding: 0 10%;
+      width: 80%;
+      font-size: 100%;
+      text-align: center;
+      line-height: 40px;
+      color: #FFFFFF;
+      button{
+        @include button;
+      }
+    }
+  }
+}
+#rating{
+  padding: 100px 0;
+  .logos{
+    @include center;
+    padding: 30px 0;
+    p{
+    @include p;
+  }
+    h1{
+      @include h1;
+    }
+  }
+  .buttons{
+    @include between;
+    padding: 30px 0;
+  }
+  .btn{
+    @include btn;
+  }
+  .bttn{
+    @include button;
+    padding: 10px 20px ;
+    font-size: 25px;
+  }
+  .rating{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  .rating-_group{
+    border: 1px solid #A0A0A0;
+    border-radius: 20px;
+    padding: 10px 20px 10px 10px;
+    color: $color;
+    margin: 30px 0;
+    width: 80%;
+    line-height: 30px;
+  }
+    p{
+      @include p;
+    }
+    &-_text{
+      @include between;
+    }
+    &-_text1{
+      @include between;
+      border-top: 1px solid #A0A0A0;
+      margin-top: 80px;
+    }
+    &-_icon{
+      @include icon;
+      margin: 0 10px;
+    }
+  }
+}
+#trade{
+  .bnt{
+    @include center;
+    button{
+      @include btn;
+    }
+  }
+  ._logo{
+    @include center;
+    padding: 80px 0;
+    h1{
+      @include h1;
+    }
+    p{
+      @include p;
+    }
+  }
+  .trade{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: $color;
+    &-_icon{
+      @include icon;
+      position:relative;
+      bottom:-1px;
+      right:25px;
+    }
+    &--img{
+      position: relative;
+    }
+    p{
+      color: #21D605;;
+    }
+    h5{
+      color: #F1B864;
+    }
+    &-_group{
+      &--icon{
+        color:  #C5C5C5;
+        font-size: 20px;
+      }
+      @include between;
+      border: 1px solid #BCBCBC;
+      border-radius: 13px;
+      padding: 5px 10px;
+      margin: 10px 0;
+      width: 90%;
+      line-height: 30px;
+    }
+  }
+}
+#family{
+  .family{
+    padding: 70px 0;
+    &-_btn{
+      @include center;
+   button{
+     @include btn;
+   }
+    }
+    &-_img{
+      display: flex;
+      justify-content: center;
+    }
+    &-_text{
+      position: relative;
+      margin: -10% 0 0 20%;
+      font-size: 50px;
+      color: #FFFFFF;
+    }
+    p{
+      @include p;
+    }
+    h1{
+      @include h1;
+    }
+    &-_logo{
+      @include center;
+      padding: 70px 0;
+    }
+  }
+}
+#record{
+  .record{
+    padding: 100px 0;
+    &--logo{
+      @include center;
+      p{
+        @include p;
+      }
+      h1{
+        @include h1;
+      }
+    }
+    &__p{
+      border-bottom: 1px solid #666;
+      @include between;
+      p{
+        @include p;
+      }
+    }
+    &--text{
+      border-bottom: 1px solid #666;
+      padding-bottom: 50px;
+      &__radio{
+        color: #FE773B;
+      }
+      &__icon{
+        border: 1px solid #C5C5C5;
+        font-size: 35px;
+        border-radius: 50%;
+        color: #A0A0A0;
+        padding: 10px;
+      }
+      @include between;
+      p{
+        @include h1;
+        font-size: 16px;
+        width: 40%;
+      }
+      h1{
+        @include h1;
+        width: 15%;
+      }
+    }
+  }
+}
+#searcher{
+  .searcher{
+    &__btn{
+      @include btn;
+    }
+      &__group{
+        text-align: center;
+        &--icon{
+          background: #FE773B;
+          border-radius: 2px;
+          padding: 12px;
+          color: white;
+        }
+        &--input{
+          border: 1px solid #B5B5B5;
+          border-radius: 9px;
+          padding: 10px 90px 10px 10px;
+          background: transparent;
+        }
+        @include between;
+        h1{
+          @include h1;
+          line-height: 70px;
+        }
+      }
+  }
+}
+#footer{
+  .footer{
+    padding: 100px 0;
+    @include between;
+  &--icons{
+    &__icons{
+      color: #FFFFFF;
+      font-size: 40px;
+    }
+    &__icon{
+      font-size: 30px;
+      background: #767676;
+      padding: 10px;
+      margin: 0 5px;
+    }
+  }
+    p{
+      @include h1;
+      width: 360px;
+      font-size: 20px;
+      color: #666;
+    }
+  }
+}

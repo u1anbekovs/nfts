@@ -1,0 +1,67 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #15141A;
+  font-family: "inter",sans-serif;
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+}
+$color: rgba(255, 255, 255, 0.7);;
+
+@mixin between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@mixin h1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+@mixin p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #F1B864;
+}
+@mixin icon{
+  background: blue;
+  border-radius: 50%;
+}
+@mixin  button{
+  background: #FE8B46;
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  color: #FFFFFF;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+@mixin btn{
+  background: transparent;
+  padding: 10px 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
